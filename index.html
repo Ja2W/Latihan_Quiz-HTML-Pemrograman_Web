@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shoes Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SHOES.
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+    <section class="product-section" id="products">
+
+        <div class="product-card" id="productCard">
+
+            <div class="image">
+                <img src="img_shoes.jpg" alt="Air Runner">
+            </div>
+
+            <div class="product-info">
+                <p class="category">
+                    RUNNING SHOES
+                </p>
+                <h1>
+                    Air Runner
+                </h1>
+                <p class="description">
+                    Sepatu ringan dan nyaman untuk digunakan saat berolahraga maupun aktivitas sehari-hari.
+                </p>
+                <h2>
+                    Rp 899.000
+                </h2>
+                <p class="choose">
+                    Pilih warna:
+                </p>
+
+                <div class="color-buttons">
+                    <button
+                        class="color black"
+                        onclick="changeColor('black')">
+                    </button>
+                    <button
+                        class="color blue"
+                        onclick="changeColor('blue')">
+                    </button>
+                    <button
+                        class="color cream"
+                        onclick="changeColor('cream')">
+                    </button>
+                </div>
+                <button
+                    class="cart-button"
+                    onclick="addToCart()">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>
